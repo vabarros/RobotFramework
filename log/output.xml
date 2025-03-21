@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.11.4 on darwin)" generated="2025-03-21T09:11:38.017410" rpa="false" schemaversion="5">
+<suite id="s1" name="Teste" source="/Users/victor.barros/Automation/Robotframework/teste.robot">
+<test id="s1-t1" name="Caso de teste Exemplo" line="7">
+<kw name="Acessar a pagina amazon" owner="resource">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-21T09:11:38.126847" level="INFO">Opening browser 'chrome' to base url 'http://www.amazon.com.br'.</msg>
+<arg>url=${URL}</arg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-21T09:11:38.126650" elapsed="7.722991"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-21T09:11:55.852700" level="INFO">Slept 10 seconds.</msg>
+<arg>time_=10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-21T09:11:45.850369" elapsed="10.002515"/>
+</kw>
+<status status="PASS" start="2025-03-21T09:11:38.126244" elapsed="17.726731"/>
+</kw>
+<kw name="Pesquisar por celulares" owner="resource">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-21T09:11:55.853571" level="INFO">Typing text 'celulares' into text field 'id:twotabsearchtextbox'.</msg>
+<arg>locator=id:twotabsearchtextbox</arg>
+<arg>text=celulares</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-21T09:11:55.853337" elapsed="0.107168"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-03-21T09:11:55.960850" level="INFO">Clicking button 'id:nav-search-submit-button'.</msg>
+<arg>locator=id:nav-search-submit-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-21T09:11:55.960677" elapsed="2.062629"/>
+</kw>
+<status status="PASS" start="2025-03-21T09:11:55.853132" elapsed="2.170320"/>
+</kw>
+<kw name="Validar o resultado" owner="resource">
+<msg time="2025-03-21T09:11:58.023937" level="FAIL">User keyword cannot be empty.</msg>
+<status status="FAIL" start="2025-03-21T09:11:58.023578" elapsed="0.000424">User keyword cannot be empty.</status>
+</kw>
+<status status="FAIL" start="2025-03-21T09:11:38.125877" elapsed="19.898258">User keyword cannot be empty.</status>
+</test>
+<doc>Teste Exemplo</doc>
+<status status="FAIL" start="2025-03-21T09:11:38.018351" elapsed="20.006055"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Teste" id="s1" pass="0" fail="1" skip="0">Teste</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
